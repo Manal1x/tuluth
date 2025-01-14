@@ -1,5 +1,6 @@
 header{
-    padding: 10px;
+    padding-top: 22px;
+    padding-bottom: 22px;
     background: white;
     border-bottom: 1px solid teal;
 }
@@ -20,18 +21,43 @@ header{
     list-style-type: none;
     display: inline-block;
     font-size: 18px;
-    margin-left:26px ;
+    margin-left:26px;
+    padding-top:10px;
+    padding-bottom:10px;
 }
 .desktop_menu ul li:hover{
     cursor: pointer;
     color: #2e9184;
 }
-
+.menu-icon{
+    display: none;
+}
+.TowButton{
+    padding: 0;
+    margin-top: 24px;
+    font-size: 18px;
+}
+.TowButton button{
+    margin: 2px;
+    /* padding: 5px; */
+}
+.languageButton{
+    color: #2e9184;
+    background: white;
+    border: #2e9184 2px solid;
+    font-weight: bold;
+}
+.sessionButton{
+    color: white;
+    background: #2e9184;
+    font-weight: bold;
+}
 
 @media screen and (min-width:128px) and (max-width:900px) {
     .desktop_menu{
         position: fixed;
-        left: 0;
+        right: -100%;
+        transition: 0.4s ease-in-out;
         top: 64px;
         background:#2e9184 ;
         color: white;
@@ -42,8 +68,31 @@ header{
         display: block;
         text-align: right;
         margin: 0;
+        margin-right: 13px;
         padding: 10px 0px 26px;
     }
-    
+    .desktop_menu ul li:hover{
+        cursor: pointer;
+        color: white;
+    }
+    .menu-icon{
+        display: block;
+        color: black;
+        font-size: 40px;
+        padding: 10px;
+        margin-right: 85% ;
+    }
+    .mobile_menu{
+        right: 0;
+        transition: 0.44s ease-in-out;
+
+    }
+    .logo{
+        margin: 5px;
+        width: 70px;   
+    }
+    .TowButton{
+        display: none;
+    }
 }
 

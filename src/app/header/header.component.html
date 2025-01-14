@@ -5,41 +5,31 @@
                 <div class="logo-container">
                     <img src="assets/images/ThuluthLogo.png" alt="Thuluth logo" class="logo">
                 </div>
-            </div> <!-- first colunm -->
+            </div> <!-- first column -->
 
-            <div class="col-md-9 col-sm-9 col-9">
-                <div class="menu-icon">
-                    <i class="bi bi-list">
-
-                    </i>
+            <div class="col-md-6 col-sm-9 col-9">
+                <div class="menu-icon" (click)="openMenu()" >
+                    <i class="{{menuIcon}}"></i>
                 </div>
-                <div class="desktop_menu">
+                <div class="desktop_menu" [class.mobile_menu]="menuValue" >
                     <ul>
-                        <li> <a href="#" routerLink="/"> الرئيسية </a></li>
-                        <li>ثلث للاعمال</li>
-                        <li>الاستشاريون </li>
-                        <li>انضم لثلث</li>
-                        <li>المدونة</li>
-                        <li>خدماتنا</li>
+                        <li (click)="closeMenu()" >الرئيسية</li>
+                        <li (click)="closeMenu()">ثلث للاعمال</li>
+                        <li (click)="closeMenu()">الاستشاريون</li>
+                        <li (click)="closeMenu()">انضم لثلث</li>
+                        <li (click)="closeMenu()">المدونة</li>
+                        <li (click)="closeMenu()">خدماتنا</li>
                     </ul>
                 </div>
-            </div>
+            </div> <!-- second column -->
+
+            <div class="col-md-2 TowButton">
+                <button type="button" class="btn btn-primary sessionButton"> جلسات فورية</button>
+                <button type="button" class="btn btn-primary languageButton">EN</button>
+            </div> <!-- third column-->
         </div>
     </div>
+
+    
 </header>
 
-<!-- 
-<a href="#" routerLink="/" class="logo">
-    <img src="../assets/images/TuluthLogo.png">
-</a>
-<nav>
-    <ul>
-        <li> <a href="#" routerLink="/"> الرئيسية </a></li>
-        <li>ثلث للاعمال</li>
-        <li>الاستشاريون </li>
-        <li>انضم لثلث</li>
-        <li>المدونة</li>
-        <li>خدماتنا</li>
-        <a href="#" routerLink="/" class="logo"></a>
-    </ul>
-</nav> -->
