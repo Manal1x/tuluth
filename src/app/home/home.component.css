@@ -1,0 +1,103 @@
+/* Banner Styles */
+.banner {
+    width: 100%; /* Full width */
+    height: 750px; /* Default height */
+    background-color: #6ed1c4;
+    /* background-image: url('https://via.placeholder.com/1920x750');  Replace with your image URL  */
+    background-size: cover; /* Cover entire area */
+    background-position: center; /* Center the image */
+    display: flex; /* Flexbox for centering content */
+    align-items: center; /* Vertically center */
+    justify-content: center; /* Horizontally center */
+    color: white; /* Text color */
+    text-align: center; /* Center align text */
+    position: relative; /* Allows for overlays if needed */
+  }
+  
+  /* Optional Overlay for Better Text Contrast */
+  .banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 1; /* Ensures it stays behind text */
+  }
+  
+  /* Banner Content */
+  .banner-content {
+    position: relative;
+    z-index: 2; /* Places content above overlay */
+  }
+  
+  .banner-content h1 {
+    font-size: 3rem; /* Main heading size */
+    margin: 0 0 20px;
+  }
+  
+  .banner-content p {
+    font-size: 18px; /* Subheading size */
+    margin: 0 0 30px;
+  }
+  .downloudButtons{
+    background-color:#2e9184;
+    border: none;
+    color: white;
+    padding: 15px 36px;
+    font-size: 10px;
+    cursor: pointer;
+    margin: 2px;
+    border-radius: 15px;
+    display:inline-block;
+  }
+  .downloudButtons:hover{
+    background-color:#6ed1c4;
+  }
+  .storeImg{
+    width: 20px;
+    height: 25px;
+    margin-left: 5px; ;
+  }
+  .downloudButtons li{
+    list-style-type: none;
+  }
+  
+  .services{
+    width: 100%;
+    height: 750px; 
+    background-color: aliceblue;
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    color: black; 
+    text-align: center;
+    position: relative; 
+  }
+  
+  .services-Container{
+    position: relative;
+    z-index: 2; /* Places content above overlay */
+
+  }
+  .services p{
+    width: 50%;
+    font-size: 18px; 
+    margin: 0 25% 30px 0px;    
+  }
+  .services-card{
+    width: 25%;
+    height: 100px;
+    border-radius: 25px red solid;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .services-card img{
+    width: 50px;
+    height: 50px;
+  }
+  
