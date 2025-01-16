@@ -81,7 +81,6 @@
 .services-Container{
   position: relative;
   z-index: 2; /* Places content above overlay */
-  background-color: #2e9184;
 
 }
 .services p{
@@ -90,7 +89,6 @@
   margin: 0 25% 30px 0px;    
 }
 .container{
-  background-color: aquamarine;
   display: grid;
   grid-template-columns: repeat(auto-fit,200px);
   gap: 55px;
@@ -98,11 +96,11 @@
   justify-content: center; 
   margin-top: 50px;
   width: 100%;
-  height: 200px;
+  height: 300px;
 }
 .services-card{
   width: 100%;
-  height: 100%;
+  height: 55%;
   border: rgba(128, 128, 128, 0.388) solid;
   border-radius: 24px;
   margin: 5px;
@@ -117,4 +115,21 @@
   width: 50px;
   height: 50px;
 }
+.downloadNow{
+  width: 100%;
+  height: 550px; 
+  background-color: #f0f0f0;
+  background-size: cover; 
+  background-position: center; 
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  color: black; 
+  text-align: center;
+  position: relative; 
+}
 
+.download-item{
+  display: flex;
+  justify-self: center;
+}
