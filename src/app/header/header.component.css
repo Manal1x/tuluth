@@ -55,14 +55,21 @@ header{
 
 @media screen and (min-width:128px) and (max-width:900px) {
     .desktop_menu{
-        position: fixed;
+        position: absolute;
         right: -100%;
         transition: 0.4s ease-in-out;
         top: 64px;
-        background:#3ac9b6 ;
+        background:white ;
         color: white;
         width:100%;
         height: 100%;
+        z-index: 10;
+        overflow-y: scroll;
+    }
+    body.desktop_menu{
+        overflow-y: hidden;
+        padding-right: 15px; /* Avoid width reflow */
+
     }
     .desktop_menu ul li{
         display: block;
