@@ -2,8 +2,7 @@
 .banner {
   width: 100%; /* Full width */
   height: 750px; /* Default height */
-  background-color: #6ed1c4;
-  /* background-image: url('https://via.placeholder.com/1920x750');  Replace with your image URL  */
+  background: linear-gradient(45deg, #42c7b5, #39eed3, #cff0eb);  /* background-image: url('https://via.placeholder.com/1920x750');  Replace with your image URL  */
   background-size: cover; /* Cover entire area */
   background-position: center; /* Center the image */
   display: flex; /* Flexbox for centering content */
@@ -66,7 +65,7 @@
 
 .services{
   width: 100%;
-  height: 750px; 
+  height: 350px; 
   background-color: white;
   background-size: cover; 
   background-position: center; 
@@ -76,12 +75,11 @@
   color: black; 
   text-align: center;
   position: relative; 
+  margin-top: 80px;
 }
 
 .services-Container{
   position: relative;
-  z-index: 2; /* Places content above overlay */
-
 }
 .services p{
   width: 50%;
@@ -99,21 +97,19 @@
   display: grid;
   grid-template-columns: repeat(auto-fit,200px);
   gap: 55px;
-  /* align-items: center;*/
   justify-content: center; 
   margin-top: 50px;
   width: 100%;
-  height: 300px;
 }
 .services-card{
   width: 100%;
-  height: 55%;
   margin: 5px;
   display: flex ;
   flex-direction: column;
   gap: 10px;
   align-items: center;
   justify-content: center;
+  
   
 }
 .services-card img{
@@ -122,8 +118,8 @@
 }
 .downloadNow{
   width: 100%;
-  height: 550px; 
-  background-color: aliceblue;
+  height: 350px; 
+  background-color: white;
   background-size: cover; 
   background-position: center; 
   display: flex;
@@ -137,4 +133,77 @@
 .download-item{
   display: flex;
   justify-self: center;
+}
+
+/* Animated Cards Section */
+.animated-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.card-container {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  width: 600px;
+  height: 450px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(50px);
+  opacity: 0;
+  animation: slideUp .5s forwards;
+  color: white;
+}
+
+.card .overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(24, 76, 69, .5); /* Semi-transparent black */
+}
+.card h3{
+  margin-right: 50px;
+  margin-top: 50px;
+}
+.card ul{
+  margin-right: 50px;
+  list-style-type: none;
+  display: inline-block;
+}
+.card ul li{
+  margin-top: 13px;
+}
+li i{
+  margin-left: 5px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Animation */
+@keyframes slideUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
