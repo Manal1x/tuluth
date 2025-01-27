@@ -1,9 +1,109 @@
+<!-- start banner-->
 <div class="banner">
-    <nav></nav>
-
-    <div>
-        <form action="">
-            
-        </form>
+    <div class="container">
+    <div class="row">
+        <div class="col">
+            <h2> انضم لثلث</h2>
+            <p>عيادتك الرقميـة المتكاملــة
+                أهلا بك كأحد الأطباء والأخصائيين النفسيين المرخصين لتقديم الجلسات بسهولة وخصوصية عبر التطبيق.</p>
+        </div>
     </div>
+    </div>
+</div>
+
+
+<div class="w-100 p-4 border border-2 ">nav bar</div>
+
+
+
+<div class="form-container">
+<div class="container">
+    <form>
+
+        <div class="container border-bottom">
+        <legend>معلومات أساسية</legend>
+        <div class="mb-3">
+          <label for="fName" class="form-label">الاسم الاول</label>
+          <input type="text" class="form-control" id="fName" aria-describedby="fName">
+        </div>
+        <div class="mb-3">
+            <label for="LName" class="form-label">الاسم الأخير</label>
+            <input type="text" class="form-control" id="LName" aria-describedby="LName">
+          </div>
+          <div class="mb-3">
+            <label for="Email" class="form-label">البريد الالكتروني</label>
+            <input type="Email" class="form-control" id="Email" aria-describedby="Email">
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label"> الجوال</label>
+            <input type="number" class="form-control" id="phone" aria-describedby="phone">
+          </div>
+          <div class="mb-3">
+            <label for="gender" class="form-label" id="gender">الجنس</label>
+            <select class="form-select" id="gender">
+                <option selected>اختيار</option>
+                <option value="female">انثى</option>
+                <option value="male">ذكر</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="container mt-3 border-bottom">
+            <legend>معلومات العنوان</legend>
+            <div class="mb-3">
+              <label for="country" class="form-label">دولة</label>
+              <input type="text" class="form-control" id="country" aria-describedby="fName">
+            </div>
+            <div class="mb-3">
+                <label for="city" class="form-label">مدينة</label>
+                <input type="text" class="form-control" id="city" aria-describedby="fName">
+              </div>
+            </div>
+
+        <div class="container  mt-3 border-bottom">
+                <legend>التفاصيل المهنية</legend>
+                <div class="mb-3">
+                  <label for="exprt" class="form-label"> سنوات الخبرة</label>
+                  <input type="number" class="form-control" id="exprt" aria-describedby="exprt">
+                </div>
+                <div class="mb-3">
+                    <label for="category" class="form-label">مسمى التصنيف</label>
+                    <input type="text" class="form-control" id="category" aria-describedby="category">
+                  </div>
+                  <div class="mb-3">
+                    <label for="date" class="form-label">تاريخ انتهاء التصنيف</label>
+                    <input type="date" class="form-control" id="date" aria-describedby="date">
+                  </div>
+                  <div class="mb-3">
+                    <label for="info" class="form-label"> نوع الاستشارات التي تود تقديمها عبر منصة ثلث</label>
+                    <input type="text" class="form-control" id="info" aria-describedby="info">
+                  </div>
+                </div>
+
+        <div class="container-mt-3 border-bottom">
+            <legend>المرفقات</legend>
+                <div>
+                    <label for="resume" class="form-label">السيرة الذاتية</label>
+                    <input type="file" class="form-control">
+                </div>
+                <div>
+                    <label for="HealthClassification" class="form-label">تصنيف هيئة التخصصات الصحية</label>
+                    <input type="file" class="form-control">
+                </div>
+                <div>
+                    <label for="academic" class="form-label">آخر مؤهل علمي</label>
+                    <input type="file" class="form-control">
+                </div>
+                <div>
+                    <label for="id" class="form-label">الهوية</label>
+                    <input type="file" class="form-control">
+                </div>
+        </div>
+
+        <div class="container mt-5 d-flex justify-content-center ">
+            <button type="button" class="btn btn-success" style="width: 30%; height: 45px; border-radius: 15px;">تقديم طلب</button>
+        </div>
+
+      </form>
+</div>
 </div>
