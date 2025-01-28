@@ -5,8 +5,8 @@ import { JoinComponent } from './join/components/join.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
-  {path:"home", component:HomeComponent},
-  {path:'join', component:JoinComponent}
+  {path:'home', component:HomeComponent},
+  {path:'join', component:JoinComponent},
 ];
 
 @NgModule({
