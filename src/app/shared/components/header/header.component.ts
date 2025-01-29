@@ -7,18 +7,18 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  menuValue:boolean = false;
-  menuIcon:String = 'bi bi-list';
+  // menuValue:boolean = false;
+  // menuIcon:String = 'bi bi-list';
 
 
-  openMenu(){
-    this.menuValue =! this.menuValue;
-    this.menuIcon = this.menuValue? 'bi bi-x': 'bi bi-list';
-  }
+  // openMenu(){
+  //   this.menuValue =! this.menuValue;
+  //   this.menuIcon = this.menuValue? 'bi bi-x': 'bi bi-list';
+  // }
   
-  closeMenu(){
-    this.menuValue = false;
-    this.menuIcon = 'bi bi-list';
-  }
+  // closeMenu(){
+  //   this.menuValue = false;
+  //   this.menuIcon = 'bi bi-list';
+  // }
 
 }
