@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EmailValidator } from '@angular/forms';
 
 @Component({
   selector: 'app-join',
@@ -10,3 +11,23 @@ import { Component } from '@angular/core';
 export class JoinComponent {
 
 }
+
+// export interface joinRequests{
+//   uid: string;
+//   firstName: string;
+//   lastName: string;
+//   phone: number;
+//   email: EmailValidator;
+//   gender: boolean;
+//   country: string;
+//   city: string;
+//   yearEx: number;
+//   category: string;
+//   dateEnd: Date;
+//   type: string;
+//   resume: File;
+//   HealthClassification: File;
+//   degree: File;
+//   idPic: File;
+
+// }
