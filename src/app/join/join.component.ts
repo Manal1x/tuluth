@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-join',
@@ -8,29 +9,11 @@ import { Component } from '@angular/core';
   styleUrl: './join.component.css'
 })
 export class JoinComponent {
-  userData = {
-    fName: '',
-    lName: '',
-    email: '',
-    phone: '',
-    gender: '',
-    country: '',
-    city: '',
-    experience: '',
-    category: '',
-    dateEnd: '',
-    info: '',
-    resume: '',
-    cate2: '',
-    degree: '',
-    id: '',
-  };
-
+ 
   constructor(){
-    this.userData
   }
 
-  add(){
-    console.log(this.userData);
+  add(f:NgForm){
+    console.log(f.value);
   }
 }
