@@ -1,0 +1,109 @@
+<!-- start banner-->
+<div class="banner">
+  <div class="container">
+  <div class="row">
+      <div class="col">
+          <h2> انضم لثلث</h2>
+          <p>عيادتك الرقميـة المتكاملــة
+              أهلا بك كأحد الأطباء والأخصائيين النفسيين المرخصين لتقديم الجلسات بسهولة وخصوصية عبر التطبيق.</p>
+      </div>
+  </div>
+  </div>
+</div>
+
+
+<div class="w-100 p-4 border border-2 ">nav bar</div>
+
+
+
+<div class="form-container">
+<div class="container">
+  <form>
+
+      <div class="container border-bottom">
+      <legend>معلومات أساسية</legend>
+      <div class="mb-3">
+        <label for="fName" class="form-label">الاسم الاول</label>
+        <input type="text" class="form-control" name="first" aria-describedby="first"  [(ngModel)]="userData.fName">
+      </div>
+      <div class="mb-3">
+          <label for="lName" class="form-label">الاسم الأخير</label>
+          <input type="text" class="form-control" name="last" aria-describedby="last"  [(ngModel)]="userData.lName">
+        </div>
+        <div class="mb-3">
+          <label for="Email" class="form-label">البريد الالكتروني</label>
+          <input type="Email" class="form-control" name="Email" aria-describedby="Email"  [(ngModel)]="userData.email">
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label"> الجوال</label>
+          <input type="number" class="form-control" name="phone" aria-describedby="phone"  [(ngModel)]="userData.phone">
+        </div>
+        <div class="mb-3">
+          <label for="gender" class="form-label" name="gender"  [(ngModel)]="userData.gender">الجنس</label>
+          <select class="form-select" name="gender">
+              <option selected>اختيار</option>
+              <option value="female">انثى</option>
+              <option value="male">ذكر</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="container mt-3 border-bottom">
+          <legend>معلومات العنوان</legend>
+          <div class="mb-3">
+            <label for="country" class="form-label">دولة</label>
+            <input type="text" class="form-control" name="country" aria-describedby="country" [(ngModel)]="userData.country">
+          </div>
+          <div class="mb-3">
+              <label for="city" class="form-label">مدينة</label>
+              <input type="text" class="form-control" name="city" aria-describedby="city"  [(ngModel)]="userData.city">
+            </div>
+          </div>
+
+      <div class="container  mt-3 border-bottom">
+              <legend>التفاصيل المهنية</legend>
+              <div class="mb-3">
+                <label for="exprt" class="form-label"> سنوات الخبرة</label>
+                <input type="number" class="form-control" name="exprt" aria-describedby="exprt"  [(ngModel)]="userData.experience">
+              </div>
+              <div class="mb-3">
+                  <label for="category" class="form-label">مسمى التصنيف</label>
+                  <input type="text" class="form-control" name="category" aria-describedby="category"  [(ngModel)]="userData.category">
+                </div>
+                <div class="mb-3">
+                  <label for="date" class="form-label">تاريخ انتهاء التصنيف</label>
+                  <input type="date" class="form-control" name="date" aria-describedby="date"  [(ngModel)]="userData.dateEnd">
+                </div>
+                <div class="mb-3">
+                  <label for="info" class="form-label"> نوع الاستشارات التي تود تقديمها عبر منصة ثلث</label>
+                  <input type="text" class="form-control" name="info" aria-describedby="info"  [(ngModel)]="userData.info">
+                </div>
+              </div>
+
+      <div class="container-mt-3 border-bottom">
+          <legend>المرفقات</legend>
+              <div>
+                  <label for="resume" class="form-label">السيرة الذاتية</label>
+                  <input type="file" class="form-control"  [(ngModel)]="userData.resume">
+              </div>
+              <div>
+                  <label for="HealthClassification" class="form-label">تصنيف هيئة التخصصات الصحية</label>
+                  <input type="file" class="form-control"  [(ngModel)]="userData.cate2">
+              </div>
+              <div>
+                  <label for="Degree" class="form-label">آخر مؤهل علمي</label>
+                  <input type="file" class="form-control"  [(ngModel)]="userData.degree">
+              </div>
+              <div>
+                  <label for="name" class="form-label">الهوية</label>
+                  <input type="file" class="form-control"  [(ngModel)]="userData.id">
+              </div>
+      </div>
+
+      <div class="container mt-5 d-flex justify-content-center ">
+          <button type="button" class="btn btn-success" style="width: 30%; height: 45px; border-radius: 15px;" (click)="add()">تقديم طلب</button>
+      </div>
+
+    </form>
+</div>
+</div>
