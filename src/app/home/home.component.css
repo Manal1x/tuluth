@@ -1,7 +1,8 @@
 .banner {
     width: 100%; 
     height: 600px;
-    background: linear-gradient( 45deg, #184c45, #2e9184, #6ed1c4);    background-size: cover; /* Cover entire area */
+    background: linear-gradient( 45deg, #184c45, #2e9184, #6ed1c4);
+    background-size: cover; 
     background-position: center; 
     display: flex; 
     align-items: center; 
@@ -17,4 +18,82 @@ li{
 .icons{
     width: 50rem;
     height: 50rem;
+}
+.scrolling-wrapper{
+	overflow-x: auto;
+}
+
+.subtitle{
+	font-size: 1.25em;
+	opacity: 0.65;
+}
+
+.card-block{
+	height: 300px;
+	background-color: #fff;
+	border: none;
+	background-position: center;
+	background-size: cover;
+	transition: all 0.2s ease-in-out !important;
+	border-radius: 24px;
+	&:hover{
+		transform: translateY(-5px);
+		box-shadow: none;
+		opacity: 0.9;
+	}
+}
+
+.card-1{
+background-color: #cff0eb;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+justify-content: center;
+}
+
+.card-img-top-200 {
+    overflow: hidden;
+    max-height: 200px;
+}
+
+.review-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  text-align: center;
+  margin: auto;
+}
+
+.review-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #184c45;
+}
+
+.stars {
+  color: #f69062;
+  font-size: 18px;
+}
+
+.review-text {
+  font-size: 16px;
+  color: #444;
+  margin-top: 10px;
+}
+
+.reviewer-name {
+  font-weight: bold;
+  font-size: 18px;
+  color: #184c45;
+  margin-top: 10px;
+}
+
+.reviewer-title {
+  font-size: 14px;
+  color: #777;
 }
